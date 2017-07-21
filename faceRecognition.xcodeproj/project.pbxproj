@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06335BBE1F1E428300E421E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BBD1F1E428300E421E3 /* SystemConfiguration.framework */; };
+		06335BC01F1E429C00E421E3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BBF1F1E429C00E421E3 /* MobileCoreServices.framework */; };
+		06335BC21F1E42A900E421E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BC11F1E42A900E421E3 /* CoreGraphics.framework */; };
+		06335BC41F1E42B100E421E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BC31F1E42B100E421E3 /* UIKit.framework */; };
+		06335BC61F1E42B700E421E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BC51F1E42B700E421E3 /* Foundation.framework */; };
+		06335BC81F1E43A400E421E3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BC71F1E43A400E421E3 /* libz.tbd */; };
+		06335BC91F1E447300E421E3 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BB71F1E422D00E421E3 /* iflyMSC.framework */; };
+		06335BCA1F1E449900E421E3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BB91F1E427400E421E3 /* libc++.tbd */; };
+		06335BCC1F1E44FF00E421E3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BCB1F1E44FF00E421E3 /* CoreVideo.framework */; };
+		06335BCE1F1E450A00E421E3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BCD1F1E450A00E421E3 /* CoreMotion.framework */; };
+		06335BD01F1E451300E421E3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BCF1F1E451300E421E3 /* CoreTelephony.framework */; };
+		06335BD21F1E451A00E421E3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06335BD11F1E451A00E421E3 /* CoreMedia.framework */; };
+		064CEB391F1E40380049148C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CEB381F1E40380049148C /* main.m */; };
+		064CEB3C1F1E40380049148C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CEB3B1F1E40380049148C /* AppDelegate.m */; };
+		064CEB3F1F1E40380049148C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CEB3E1F1E40380049148C /* ViewController.m */; };
+		064CEB421F1E40380049148C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064CEB401F1E40380049148C /* Main.storyboard */; };
+		064CEB441F1E40380049148C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064CEB431F1E40380049148C /* Assets.xcassets */; };
+		064CEB471F1E40380049148C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064CEB451F1E40380049148C /* LaunchScreen.storyboard */; };
+		064CEB521F1E40380049148C /* faceRecognitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CEB511F1E40380049148C /* faceRecognitionTests.m */; };
+		064CEB5D1F1E40380049148C /* faceRecognitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CEB5C1F1E40380049148C /* faceRecognitionUITests.m */; };
+		068FF7AB1F204EBB00CF5077 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068FF7971F204EBB00CF5077 /* CanvasView.m */; };
+		068FF7AC1F204EBB00CF5077 /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 068FF79A1F204EBB00CF5077 /* CaptureManager.m */; };
+		068FF7AD1F204EBB00CF5077 /* CalculatorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 068FF79E1F204EBB00CF5077 /* CalculatorTools.m */; };
+		068FF7AE1F204EBB00CF5077 /* IFlyFaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 068FF7A01F204EBB00CF5077 /* IFlyFaceImage.m */; };
+		068FF7AF1F204EBB00CF5077 /* UIImage+compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 068FF7A21F204EBB00CF5077 /* UIImage+compress.m */; };
+		068FF7B01F204EBB00CF5077 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 068FF7A41F204EBB00CF5077 /* UIImage+Extensions.m */; };
+		068FF7B11F204EBB00CF5077 /* PermissionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 068FF7A71F204EBB00CF5077 /* PermissionDetector.m */; };
+		068FF7B21F204EBB00CF5077 /* IFlyFaceResultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 068FF7AA1F204EBB00CF5077 /* IFlyFaceResultKeys.m */; };
+		068FF7B61F20923300CF5077 /* glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 068FF7B51F20923300CF5077 /* glasses.png */; };
+		069E2DCB1F1EF4F40079247F /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069E2DCA1F1EF4F40079247F /* iflyMSC.framework */; };
+		C4F5C852833D61E07D8FB8F3 /* libPods-faceRecognition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9297B0E79B9E1B3455A3BC /* libPods-faceRecognition.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		064CEB4E1F1E40380049148C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 064CEB2C1F1E40370049148C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 064CEB331F1E40370049148C;
+			remoteInfo = faceRecognition;
+		};
+		064CEB591F1E40380049148C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 064CEB2C1F1E40370049148C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 064CEB331F1E40370049148C;
+			remoteInfo = faceRecognition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06335BB71F1E422D00E421E3 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = faceRecognition/lib/iflyMSC.framework; sourceTree = "<group>"; };
+		06335BB91F1E427400E421E3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		06335BBB1F1E427B00E421E3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		06335BBD1F1E428300E421E3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		06335BBF1F1E429C00E421E3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		06335BC11F1E42A900E421E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06335BC31F1E42B100E421E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06335BC51F1E42B700E421E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06335BC71F1E43A400E421E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		06335BCB1F1E44FF00E421E3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		06335BCD1F1E450A00E421E3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		06335BCF1F1E451300E421E3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		06335BD11F1E451A00E421E3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		064CEB341F1E40370049148C /* faceRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faceRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		064CEB381F1E40380049148C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		064CEB3A1F1E40380049148C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		064CEB3B1F1E40380049148C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		064CEB3D1F1E40380049148C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		064CEB3E1F1E40380049148C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		064CEB411F1E40380049148C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		064CEB431F1E40380049148C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		064CEB461F1E40380049148C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		064CEB481F1E40380049148C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064CEB4D1F1E40380049148C /* faceRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = faceRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		064CEB511F1E40380049148C /* faceRecognitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = faceRecognitionTests.m; sourceTree = "<group>"; };
+		064CEB531F1E40380049148C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064CEB581F1E40380049148C /* faceRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = faceRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		064CEB5C1F1E40380049148C /* faceRecognitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = faceRecognitionUITests.m; sourceTree = "<group>"; };
+		064CEB5E1F1E40380049148C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068FF7961F204EBB00CF5077 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		068FF7971F204EBB00CF5077 /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		068FF7991F204EBB00CF5077 /* CaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManager.h; sourceTree = "<group>"; };
+		068FF79A1F204EBB00CF5077 /* CaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManager.m; sourceTree = "<group>"; };
+		068FF79B1F204EBB00CF5077 /* DemoPreDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoPreDefine.h; sourceTree = "<group>"; };
+		068FF79D1F204EBB00CF5077 /* CalculatorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorTools.h; sourceTree = "<group>"; };
+		068FF79E1F204EBB00CF5077 /* CalculatorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTools.m; sourceTree = "<group>"; };
+		068FF79F1F204EBB00CF5077 /* IFlyFaceImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceImage.h; sourceTree = "<group>"; };
+		068FF7A01F204EBB00CF5077 /* IFlyFaceImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceImage.m; sourceTree = "<group>"; };
+		068FF7A11F204EBB00CF5077 /* UIImage+compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+compress.h"; sourceTree = "<group>"; };
+		068FF7A21F204EBB00CF5077 /* UIImage+compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+compress.m"; sourceTree = "<group>"; };
+		068FF7A31F204EBB00CF5077 /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		068FF7A41F204EBB00CF5077 /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		068FF7A61F204EBB00CF5077 /* PermissionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionDetector.h; sourceTree = "<group>"; };
+		068FF7A71F204EBB00CF5077 /* PermissionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionDetector.m; sourceTree = "<group>"; };
+		068FF7A91F204EBB00CF5077 /* IFlyFaceResultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultKeys.h; sourceTree = "<group>"; };
+		068FF7AA1F204EBB00CF5077 /* IFlyFaceResultKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultKeys.m; sourceTree = "<group>"; };
+		068FF7B51F20923300CF5077 /* glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glasses.png; sourceTree = "<group>"; };
+		069E2DCA1F1EF4F40079247F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		8A9297B0E79B9E1B3455A3BC /* libPods-faceRecognition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-faceRecognition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BBDBCA41B996528269F3FE /* Pods-faceRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceRecognition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-faceRecognition/Pods-faceRecognition.debug.xcconfig"; sourceTree = "<group>"; };
+		FC0857C2224AD48BB47AB920 /* Pods-faceRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceRecognition.release.xcconfig"; path = "Pods/Target Support Files/Pods-faceRecognition/Pods-faceRecognition.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		064CEB311F1E40370049148C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06335BD21F1E451A00E421E3 /* CoreMedia.framework in Frameworks */,
+				06335BD01F1E451300E421E3 /* CoreTelephony.framework in Frameworks */,
+				06335BCE1F1E450A00E421E3 /* CoreMotion.framework in Frameworks */,
+				06335BCC1F1E44FF00E421E3 /* CoreVideo.framework in Frameworks */,
+				06335BCA1F1E449900E421E3 /* libc++.tbd in Frameworks */,
+				06335BC91F1E447300E421E3 /* iflyMSC.framework in Frameworks */,
+				069E2DCB1F1EF4F40079247F /* iflyMSC.framework in Frameworks */,
+				06335BC81F1E43A400E421E3 /* libz.tbd in Frameworks */,
+				06335BC61F1E42B700E421E3 /* Foundation.framework in Frameworks */,
+				06335BC41F1E42B100E421E3 /* UIKit.framework in Frameworks */,
+				06335BC21F1E42A900E421E3 /* CoreGraphics.framework in Frameworks */,
+				06335BC01F1E429C00E421E3 /* MobileCoreServices.framework in Frameworks */,
+				06335BBE1F1E428300E421E3 /* SystemConfiguration.framework in Frameworks */,
+				C4F5C852833D61E07D8FB8F3 /* libPods-faceRecognition.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		064CEB4A1F1E40380049148C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		064CEB551F1E40380049148C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		064CEB2B1F1E40370049148C = {
+			isa = PBXGroup;
+			children = (
+				064CEB361F1E40370049148C /* faceRecognition */,
+				064CEB501F1E40380049148C /* faceRecognitionTests */,
+				064CEB5B1F1E40380049148C /* faceRecognitionUITests */,
+				064CEB351F1E40370049148C /* Products */,
+				064CEB6A1F1E41560049148C /* Frameworks */,
+				9FDC272370147A92296A5A02 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		064CEB351F1E40370049148C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				064CEB341F1E40370049148C /* faceRecognition.app */,
+				064CEB4D1F1E40380049148C /* faceRecognitionTests.xctest */,
+				064CEB581F1E40380049148C /* faceRecognitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		064CEB361F1E40370049148C /* faceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				068FF7B51F20923300CF5077 /* glasses.png */,
+				068FF7941F204EBB00CF5077 /* Tools */,
+				069E2DC91F1EF4F40079247F /* lib */,
+				064CEB3A1F1E40380049148C /* AppDelegate.h */,
+				064CEB3B1F1E40380049148C /* AppDelegate.m */,
+				064CEB3D1F1E40380049148C /* ViewController.h */,
+				064CEB3E1F1E40380049148C /* ViewController.m */,
+				064CEB401F1E40380049148C /* Main.storyboard */,
+				064CEB431F1E40380049148C /* Assets.xcassets */,
+				064CEB451F1E40380049148C /* LaunchScreen.storyboard */,
+				064CEB481F1E40380049148C /* Info.plist */,
+				064CEB371F1E40380049148C /* Supporting Files */,
+			);
+			path = faceRecognition;
+			sourceTree = "<group>";
+		};
+		064CEB371F1E40380049148C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				064CEB381F1E40380049148C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		064CEB501F1E40380049148C /* faceRecognitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				064CEB511F1E40380049148C /* faceRecognitionTests.m */,
+				064CEB531F1E40380049148C /* Info.plist */,
+			);
+			path = faceRecognitionTests;
+			sourceTree = "<group>";
+		};
+		064CEB5B1F1E40380049148C /* faceRecognitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				064CEB5C1F1E40380049148C /* faceRecognitionUITests.m */,
+				064CEB5E1F1E40380049148C /* Info.plist */,
+			);
+			path = faceRecognitionUITests;
+			sourceTree = "<group>";
+		};
+		064CEB6A1F1E41560049148C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06335BD11F1E451A00E421E3 /* CoreMedia.framework */,
+				06335BCF1F1E451300E421E3 /* CoreTelephony.framework */,
+				06335BCD1F1E450A00E421E3 /* CoreMotion.framework */,
+				06335BCB1F1E44FF00E421E3 /* CoreVideo.framework */,
+				06335BC71F1E43A400E421E3 /* libz.tbd */,
+				06335BC51F1E42B700E421E3 /* Foundation.framework */,
+				06335BC31F1E42B100E421E3 /* UIKit.framework */,
+				06335BC11F1E42A900E421E3 /* CoreGraphics.framework */,
+				06335BBF1F1E429C00E421E3 /* MobileCoreServices.framework */,
+				06335BBD1F1E428300E421E3 /* SystemConfiguration.framework */,
+				06335BBB1F1E427B00E421E3 /* libstdc++.tbd */,
+				06335BB91F1E427400E421E3 /* libc++.tbd */,
+				06335BB71F1E422D00E421E3 /* iflyMSC.framework */,
+				8A9297B0E79B9E1B3455A3BC /* libPods-faceRecognition.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		068FF7941F204EBB00CF5077 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				068FF7951F204EBB00CF5077 /* CanvasView */,
+				068FF7981F204EBB00CF5077 /* Capture */,
+				068FF79B1F204EBB00CF5077 /* DemoPreDefine.h */,
+				068FF79C1F204EBB00CF5077 /* Image */,
+				068FF7A51F204EBB00CF5077 /* Permission */,
+				068FF7A81F204EBB00CF5077 /* Result */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		068FF7951F204EBB00CF5077 /* CanvasView */ = {
+			isa = PBXGroup;
+			children = (
+				068FF7961F204EBB00CF5077 /* CanvasView.h */,
+				068FF7971F204EBB00CF5077 /* CanvasView.m */,
+			);
+			path = CanvasView;
+			sourceTree = "<group>";
+		};
+		068FF7981F204EBB00CF5077 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				068FF7991F204EBB00CF5077 /* CaptureManager.h */,
+				068FF79A1F204EBB00CF5077 /* CaptureManager.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		068FF79C1F204EBB00CF5077 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				068FF79D1F204EBB00CF5077 /* CalculatorTools.h */,
+				068FF79E1F204EBB00CF5077 /* CalculatorTools.m */,
+				068FF79F1F204EBB00CF5077 /* IFlyFaceImage.h */,
+				068FF7A01F204EBB00CF5077 /* IFlyFaceImage.m */,
+				068FF7A11F204EBB00CF5077 /* UIImage+compress.h */,
+				068FF7A21F204EBB00CF5077 /* UIImage+compress.m */,
+				068FF7A31F204EBB00CF5077 /* UIImage+Extensions.h */,
+				068FF7A41F204EBB00CF5077 /* UIImage+Extensions.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		068FF7A51F204EBB00CF5077 /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				068FF7A61F204EBB00CF5077 /* PermissionDetector.h */,
+				068FF7A71F204EBB00CF5077 /* PermissionDetector.m */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
+		068FF7A81F204EBB00CF5077 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				068FF7A91F204EBB00CF5077 /* IFlyFaceResultKeys.h */,
+				068FF7AA1F204EBB00CF5077 /* IFlyFaceResultKeys.m */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		069E2DC91F1EF4F40079247F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				069E2DCA1F1EF4F40079247F /* iflyMSC.framework */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9FDC272370147A92296A5A02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96BBDBCA41B996528269F3FE /* Pods-faceRecognition.debug.xcconfig */,
+				FC0857C2224AD48BB47AB920 /* Pods-faceRecognition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		064CEB331F1E40370049148C /* faceRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 064CEB611F1E40380049148C /* Build configuration list for PBXNativeTarget "faceRecognition" */;
+			buildPhases = (
+				F70D8D35816BAB3622DB3A59 /* [CP] Check Pods Manifest.lock */,
+				064CEB301F1E40370049148C /* Sources */,
+				064CEB311F1E40370049148C /* Frameworks */,
+				064CEB321F1E40370049148C /* Resources */,
+				C9C9710BE78BAFB42870D922 /* [CP] Embed Pods Frameworks */,
+				004CA2CEC2837A8E69109270 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = faceRecognition;
+			productName = faceRecognition;
+			productReference = 064CEB341F1E40370049148C /* faceRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		064CEB4C1F1E40380049148C /* faceRecognitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 064CEB641F1E40380049148C /* Build configuration list for PBXNativeTarget "faceRecognitionTests" */;
+			buildPhases = (
+				064CEB491F1E40380049148C /* Sources */,
+				064CEB4A1F1E40380049148C /* Frameworks */,
+				064CEB4B1F1E40380049148C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				064CEB4F1F1E40380049148C /* PBXTargetDependency */,
+			);
+			name = faceRecognitionTests;
+			productName = faceRecognitionTests;
+			productReference = 064CEB4D1F1E40380049148C /* faceRecognitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		064CEB571F1E40380049148C /* faceRecognitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 064CEB671F1E40380049148C /* Build configuration list for PBXNativeTarget "faceRecognitionUITests" */;
+			buildPhases = (
+				064CEB541F1E40380049148C /* Sources */,
+				064CEB551F1E40380049148C /* Frameworks */,
+				064CEB561F1E40380049148C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				064CEB5A1F1E40380049148C /* PBXTargetDependency */,
+			);
+			name = faceRecognitionUITests;
+			productName = faceRecognitionUITests;
+			productReference = 064CEB581F1E40380049148C /* faceRecognitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		064CEB2C1F1E40370049148C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "董立峥";
+				TargetAttributes = {
+					064CEB331F1E40370049148C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 86WYGE98BR;
+						ProvisioningStyle = Automatic;
+					};
+					064CEB4C1F1E40380049148C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 86WYGE98BR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 064CEB331F1E40370049148C;
+					};
+					064CEB571F1E40380049148C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 86WYGE98BR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 064CEB331F1E40370049148C;
+					};
+				};
+			};
+			buildConfigurationList = 064CEB2F1F1E40370049148C /* Build configuration list for PBXProject "faceRecognition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 064CEB2B1F1E40370049148C;
+			productRefGroup = 064CEB351F1E40370049148C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				064CEB331F1E40370049148C /* faceRecognition */,
+				064CEB4C1F1E40380049148C /* faceRecognitionTests */,
+				064CEB571F1E40380049148C /* faceRecognitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		064CEB321F1E40370049148C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068FF7B61F20923300CF5077 /* glasses.png in Resources */,
+				064CEB471F1E40380049148C /* LaunchScreen.storyboard in Resources */,
+				064CEB441F1E40380049148C /* Assets.xcassets in Resources */,
+				064CEB421F1E40380049148C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		064CEB4B1F1E40380049148C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		064CEB561F1E40380049148C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		004CA2CEC2837A8E69109270 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faceRecognition/Pods-faceRecognition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9C9710BE78BAFB42870D922 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faceRecognition/Pods-faceRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F70D8D35816BAB3622DB3A59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		064CEB301F1E40370049148C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068FF7B11F204EBB00CF5077 /* PermissionDetector.m in Sources */,
+				068FF7B21F204EBB00CF5077 /* IFlyFaceResultKeys.m in Sources */,
+				068FF7AE1F204EBB00CF5077 /* IFlyFaceImage.m in Sources */,
+				068FF7AC1F204EBB00CF5077 /* CaptureManager.m in Sources */,
+				068FF7AD1F204EBB00CF5077 /* CalculatorTools.m in Sources */,
+				068FF7B01F204EBB00CF5077 /* UIImage+Extensions.m in Sources */,
+				064CEB3F1F1E40380049148C /* ViewController.m in Sources */,
+				064CEB3C1F1E40380049148C /* AppDelegate.m in Sources */,
+				064CEB391F1E40380049148C /* main.m in Sources */,
+				068FF7AF1F204EBB00CF5077 /* UIImage+compress.m in Sources */,
+				068FF7AB1F204EBB00CF5077 /* CanvasView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		064CEB491F1E40380049148C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064CEB521F1E40380049148C /* faceRecognitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		064CEB541F1E40380049148C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064CEB5D1F1E40380049148C /* faceRecognitionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		064CEB4F1F1E40380049148C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 064CEB331F1E40370049148C /* faceRecognition */;
+			targetProxy = 064CEB4E1F1E40380049148C /* PBXContainerItemProxy */;
+		};
+		064CEB5A1F1E40380049148C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 064CEB331F1E40370049148C /* faceRecognition */;
+			targetProxy = 064CEB591F1E40380049148C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		064CEB401F1E40380049148C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064CEB411F1E40380049148C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		064CEB451F1E40380049148C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064CEB461F1E40380049148C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		064CEB5F1F1E40380049148C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		064CEB601F1E40380049148C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		064CEB621F1E40380049148C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96BBDBCA41B996528269F3FE /* Pods-faceRecognition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 86WYGE98BR;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/faceRecognition/lib",
+					"$(PROJECT_DIR)/faceRecognition/lib",
+				);
+				INFOPLIST_FILE = faceRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luweikeji.faceRecognition.faceRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		064CEB631F1E40380049148C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC0857C2224AD48BB47AB920 /* Pods-faceRecognition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 86WYGE98BR;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/faceRecognition/lib",
+					"$(PROJECT_DIR)/faceRecognition/lib",
+				);
+				INFOPLIST_FILE = faceRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luweikeji.faceRecognition.faceRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		064CEB651F1E40380049148C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 86WYGE98BR;
+				INFOPLIST_FILE = faceRecognitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luweikeji.faceRecognition.faceRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/faceRecognition.app/faceRecognition";
+			};
+			name = Debug;
+		};
+		064CEB661F1E40380049148C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 86WYGE98BR;
+				INFOPLIST_FILE = faceRecognitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luweikeji.faceRecognition.faceRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/faceRecognition.app/faceRecognition";
+			};
+			name = Release;
+		};
+		064CEB681F1E40380049148C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 86WYGE98BR;
+				INFOPLIST_FILE = faceRecognitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luweikeji.faceRecognition.faceRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = faceRecognition;
+			};
+			name = Debug;
+		};
+		064CEB691F1E40380049148C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 86WYGE98BR;
+				INFOPLIST_FILE = faceRecognitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luweikeji.faceRecognition.faceRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = faceRecognition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		064CEB2F1F1E40370049148C /* Build configuration list for PBXProject "faceRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064CEB5F1F1E40380049148C /* Debug */,
+				064CEB601F1E40380049148C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		064CEB611F1E40380049148C /* Build configuration list for PBXNativeTarget "faceRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064CEB621F1E40380049148C /* Debug */,
+				064CEB631F1E40380049148C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		064CEB641F1E40380049148C /* Build configuration list for PBXNativeTarget "faceRecognitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064CEB651F1E40380049148C /* Debug */,
+				064CEB661F1E40380049148C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		064CEB671F1E40380049148C /* Build configuration list for PBXNativeTarget "faceRecognitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064CEB681F1E40380049148C /* Debug */,
+				064CEB691F1E40380049148C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 064CEB2C1F1E40370049148C /* Project object */;
+}
